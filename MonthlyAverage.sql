@@ -1,0 +1,1 @@
+create table MonthlyAverage as select avg(出访gprs流量) as 出访gprs流量月平均, avg(出访统一后总金额) as 出访统一后总金额月平均 , 国家  from Monthly group by 国家

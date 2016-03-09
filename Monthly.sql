@@ -1,0 +1,1 @@
+create table Monthly as select sum(出访gprs流量) as 出访gprs流量, sum(出访统一后总金额) as 出访统一后总金额 , 国家 , 时间 from Roaming group by 国家, 时间
