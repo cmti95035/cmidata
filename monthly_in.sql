@@ -1,0 +1,1 @@
+create table Monthly_In as select sum(来访gprs流量) as 来访gprs流量, sum(来访gprs结算收入) as 来访gprs结算收入, sum(来访sms结算收入) as 来访sms结算收入, sum(来访总结算收入) as 来访总结算收入, sum(来访通话时长总来访量) as 来访通话时长总来访量, 国家, 年, 月 from roaming group by 国家, 年, 月;

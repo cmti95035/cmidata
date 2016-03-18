@@ -1,0 +1,1 @@
+create table MonthlyAverage_In as select avg(来访gprs流量) as 来访gprs流量月平均, AVG(来访gprs结算收入) as 来访gprs结算收入月平均, avg(来访sms结算收入) as 来访sms结算收入月平均, avg(来访总结算收入) as 来访总结算收入月平均, avg(来访通话时长总来访量) as 来访通话时长总来访量月平均, 国家, 年 from `Monthly_In` group by 国家, 年;
