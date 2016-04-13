@@ -8,7 +8,7 @@ sh = wb.sheet_by_index(0)
 your_csv_file = open('201301.csv', 'wb')
 wr = csv.writer(your_csv_file, quoting=csv.QUOTE_ALL)
 
-for rownum in xrange(1, sh.nrows - 1):
+for rownum in xrange(7, sh.nrows - 1):
     wr.writerow([unicode(entry).encode("utf-8") for entry in sh.row_values(rownum)])
 
 your_csv_file.close()
